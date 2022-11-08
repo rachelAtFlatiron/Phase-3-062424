@@ -49,7 +49,7 @@ class Pet:
 # Instances 
 rose = Pet('rose', 11, 'domestic longhair', 'sweet', 'rose.jpg')
 cookie = Pet('cookie', 1, 'Dachshund', 'hyper', 'cookie.jpg')
-princess_grace = Pet('princess grace', 7, 'domestic longhair', 'affectionate', 'gracy.jpg')
+princess_grace = Pet('princess grace', 7, 'domestic longhair', 'affectionate', 'gracy.png')
 
 # Run in ipdb session
 # rose == cookie
