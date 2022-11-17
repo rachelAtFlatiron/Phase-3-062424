@@ -24,7 +24,7 @@ class Pet:
 
     # ✅ 3. Add "drop_table" Class Method to Drop "pets" Table If Exists
 
-    # ✅ 4. Add "save" Class Method to Persist New "pet" Instances to DB
+    # ✅ 4. Add "save" Instance Method to Persist New "pet" Instances to DB
 
     # ✅ 5. Add "create" Class Method to Initialize and Save New "pet" Instances to DB
 
