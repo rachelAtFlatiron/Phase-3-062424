@@ -1,4 +1,10 @@
-# Owner: name: string, phone: string, email: string, address: string
+# Stretch Goal: Build Out Corresponding Owner Class Methods
+
+# Owner Attributes: 
+# name: string 
+# phone: string 
+# email: string 
+# address: string
 
 import sqlite3
 
@@ -7,4 +13,4 @@ CURSOR = CONN.cursor()
 
 class Owner:
     
-    # To Be Done
+    pass
