@@ -14,23 +14,15 @@
 
 # Intro to Databases
 
+## Putting Things in Context.
 
-
-
-
-## Putting things in Context.
-
-Databases allow us to store our data outside of our code and we can do CRUD and have it persist to the next session.
-
-
+Databases allow us to store and perform CRUD actions on data outside of our code before allowing our changes persist to the next session.
 
 ## ORM Analogy
 
 ![ORM Analogy](https://res.cloudinary.com/dnocv6uwb/image/upload/v1651161995/Flatiron%20Slideshow%20images/analogy.drawio.svg)
 
-
-
-## Where we're headed
+## Where We're Headed
 
 ![The Pattern](https://raw.githubusercontent.com/learn-co-students/phase3-lecture-repo-template/04_begin_intro_to_databases/04_intro_to_databases/demo/object-method-sql-query-return.drawio.svg?token=GHSAT0AAAAAABS54V3M5DXF4WXV6T3OUTPUYTJ6M6A)
 
@@ -41,8 +33,7 @@ At the end of the phase, we'll be building out an API that will sit between our 
 
 - React App
 - Fetch to API
-- API interacts with Database
-- Sends response back to Browser
+- API interacts with database and sends response back to Browser
 - Resolved promise from fetch leads to change in state
 - React updates the DOM
 
@@ -53,14 +44,11 @@ At the end of the phase, we'll be building out an API that will sit between our 
 ### Whats wrong with this table?						
 ![bad-data-1](./assets/bad-data-1.png)
 
-
 ### Whats wrong with this table?						
 ![bad-data-2](./assets/bad-data-2.png)
 
-
 ### Correct table
 ![first_normal_form](./assets/first_normal_form.png)
-
 
 ### one-to-many
 
@@ -69,22 +57,20 @@ At the end of the phase, we'll be building out an API that will sit between our 
 # many-to-many
 ![many-to-many](./assets/many-to-many.png)
 
-
-
 ## Rover Clone
 
-### Key Features we're going to add to our Rover Clone:
+### Key Features:
 
 - Add persistence
   - A Read (SELECT) operation to retrieve persisted pets
-  - A Create (INSERT INTO) operation to persists pets
-  - An Update (UPDATE) operation to update a persisted pet.
-  - An Delete (DELETE) operation to delete a persisted pet.
+  - A Create (INSERT INTO) operation to persist new pets
+  - An Update (UPDATE) operation to update a persisted pet
+  - An Delete (DELETE) operation to delete a persisted pet
 
 <!-- slide -->
 
-The Following Slides outline the configuration changes necessary to integrate a SQLite database into our application.
-  
+The following slides outline the configuration changes necessary to integrate a SQLite database into our application.
+
 
 <!-- slide -->
 
@@ -99,23 +85,23 @@ bundle add sqlite3
 Install [DB Browser for SQLite](https://sqlitebrowser.org/)
 
 WSL [Using SQLite with VS Code Extension](https://www.youtube.com/watch?v=bKixKfb1J1o)
-  - Right click DB and select open Database
-  - In SQLite Explorer right click the Database and select new query 
-  - Wright the query, highlight the query, click right and select run query
+  - Right click DB and select "Open database"
+  - In SQLite Explorer, right click the Database and select "New query"
+  - Write the query, highlight the query, click right and select "Run query"
 
 
 <!-- slide -->
 
 ## SQL
-SQL(Structured Query Language). A language that allows us to manipulate databases. 
+SQL(Structured Query Language): A language that allows us to manipulate databases. 
 
-SQLite is a library that will allow us to create a Relational SQL database. 
+SQLite is a library that will allow us to create relational SQL databases. 
 
-Relational database is a database of tables and rows with data points that relate to each other. Tables have unique Primary keys and columns that data of varying types.
+A relational database is a database of tables and rows with data points that relate to one another. Tables have unique Primary keys and columns that contain data of varying types.
 
 
 
-#### Delete tables
+#### Delete Tables
 DROP TABLE dogs;
 
 #### Create the Tables for pets and owners 
@@ -144,7 +130,7 @@ CREATE TABLE pets(
 ```
 
 
-### Update table
+### Update Table
 
 ```
 ALTER TABLE pets
@@ -155,7 +141,7 @@ RENAME COLUMN birthdate TO age;
 
 ```
 
-### Add data to table
+### Add Data to Table
 ```
 INSERT INTO owners(name, address, email, phone) 
 VALUES ('ix', '999 8th st Seattle Wa 90000', 'ix_is_cool@gmail.com', '9991231234');
@@ -179,7 +165,7 @@ VALUES ('Chop', '5', 'shiba inu', 'cheese', 'https://res.cloudinary.com/dnocv6uw
 
 ```
 
-### Query Table data
+### Query Table Data
 
 ```
 SELECT * FROM pets
@@ -205,7 +191,7 @@ DELETE FROM pets WHERE name = 'Chop';
 
 ```
 
-#### Join tables
+#### Join Tables
 
 #### one-to-many
 
