@@ -11,7 +11,7 @@ class Pet:
         self.image_url = image_url
  
     
-    # 6✅. Create a class method, increase_pets that will increment total_pets
+    # 6✅. Create a class method increase_pets that will increment total_pets
         # replace Pet.total_pets += 1 in __init__ with increase_pets()
 
     def print_pet_details(self):
