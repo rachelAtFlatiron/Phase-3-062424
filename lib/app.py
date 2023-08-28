@@ -1,107 +1,102 @@
+# 📀📀📀📀 STOPPED at 30mins
+
 # Sequence Types
 
 # Creating Lists
 #✅ 1. Create a list of 10 pet names
+#🛑 we call arrays 'lists' in python
+#🛑🛑 Mutable: can change values (tuples are immutable)
 pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
 
 #------------------------ Reading Information from Lists
 #✅ 2. Return the first pet name 
-# print(pet_names[0]) -> 'Rose' 
+print(pet_names[0]) # -> 'Rose' 
 
-#✅ 3. Return all pet names beginning from the 3rd index
-# print(pet_names[3:])
-# -> ['Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
+#✅ 3. Return the last value
+#🛑 can keep going backwards
+print(pet_names[-1]) # -> 'Paul'
 
-#✅ 4. Return all pet names before the 3rd index
-# print(pet_names[:3])
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes']
+#✅ 4. Return all pet names beginning from the 3rd index
+#💡 Is this inclusive or exclusive? (inclusive)
+print(pet_names[3:]) # -> ['Luke', 'Lea', 'Princess Grace', ...]
 
-#✅ 5.  Return all pet names beginning from the 3rd index and up to the 7th
-# print(pet_names[3:7])
-# -> ['Luke', 'Lea', 'Princess Grace', 'Spot']
+#✅ 5. Return all pet names before the 3rd index
+#💡 Is this inclusive or exclusive? (exclusive)
+print(pet_names[:3]) # -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes']
 
-#✅ 6. Find the index of a given element
-# print(pet_names.index('Tom'))
-# -> 7
+#✅ 6.  Return all pet names beginning from the 3rd index and up to (exclusive of) the 7th
+print(pet_names[3:7]) # -> ['Luke', 'Lea', 'Princess Grace', 'Spot']
 
-#✅ 7. Reverse the original list
-# pet_names.reverse()
-# print(pet_names)
-# -> ['Paul', 'Mini', 'Tom', 'Spot', 'Princess Grace', 'Lea', 'Luke', 'Mr.Legumes', 'Meow Meow Beans', 'Rose']
-# Note that .reverse does not return anything
+#✅ 7. Find the index of a given element
+print(pet_names.index('Tom')) # -> 7
 
-#✅ 8. Return the frequency of a given element 
-# print(pet_names.count('Rose'))
-# -> 1
-# print(['a', 'b', 'c', 'a', 'd', 'a'].count('a'))
-# -> 3
+#✅ 8. Reverse the original list
+pet_names.reverse() #🐛 try printing pet_names.reverse() to see None
+#🛑 Note that .reverse does not return anything, it is DESTRUCTIVE
+print(pet_names)
+
+#✅ 9. Return the frequency of a given element 
+print(pet_names.count('Rose')) # -> 1
+print(['a', 'b', 'c', 'a', 'd', 'a'].count('a')) # -> 3
 
 #---------------------------------- Updating Lists
-#✅ 9. Change the first element to all uppercase 
-# pet_names[0] = pet_names[0].upper()
-# print(pet_names)
-# -> ['ROSE', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
+#✅ 10. Change the first element to all uppercase
+#🛑 REASSIGNMENT 
+pet_names[0] = pet_names[0].upper()
+print(pet_names) # -> ['ROSE', 'Meow Meow Beans', ...]
 
 #---------------------------------- Adding items to list
-#✅ 10. Append a new name to the list
-# pet_names.append('Blue')
-# print(pet_names)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul', 'Blue']
+#✅ 11. Append a new name to the list
+pet_names.append('Blue') #🛑 MUTATES list
+print(pet_names) # -> ['Rose', ..., 'Paul', 'Blue']
 
-#✅ 11. Add a new name at a specific index
-# pet_names.insert(3,'Red')
-# print(pet_names)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Red', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
+#✅ 12. Add a new name at a specific index
+pet_names.insert(0, "Bud") #beginning
+pet_names.insert(3,'Red') #index 3
+pet_names.insert(-1, "Sam") #second to list index (use append for end)
 
-#✅ 12. Add two lists together 
-# new_list = pet_names + ['Yellow', 'Green']
-# print(new_list)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul', 'Yellow', 'Green']
-# new_list_2 = [1,2,3] + [4,5,6]
-# print(new_list_2)
-# -> [1, 2, 3, 4, 5, 6]
+#✅ 13. Add two lists together 
+new_list = pet_names + ['Yellow', 'Green']
+print(new_list) # -> ['Rose', ..., 'Yellow', 'Green']
+new_list_2 = [1,2,3] + [4,5,6]
+print(new_list_2) # -> [1, 2, 3, 4, 5, 6]
 
 #---------------------------------- Removing 
-#✅ 13. Remove the final element from the list
-# print(pet_names.pop())
-# -> Paul
-# print(pet_names)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini']
+#✅ 14. Remove the final element from the list
+print(pet_names.pop()) # -> Paul
+print(pet_names) # -> ['Rose', ..., 'Mini']
 
-#✅ 14. Remove element by specific index
-# pet_names.pop(3)
-# print(pet_names)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
+#✅ 15. Remove element by specific index
+pet_names.pop(3)
+print(pet_names)
 
-#✅ 15. Remove a specific element 
-# pet_names.remove('Paul')
-# print(pet_names)
-# -> ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini']
+#✅ 16. Remove a specific element 
+pet_names.remove('Paul') #🛑 finds first matching case, google for all cases
+print(pet_names)
 
-#✅ 16. Remove all pet names from the list
-# pet_names.clear()
-# print(pet_names)  
-# -> []
+#✅ 17. Remove all pet names from the list
+pet_names.clear()
+print(pet_names)  # -> []
 
 #---------------------------------- Tuple 
 # 📚 Review With Students:
     # Mutable, Immutable, Changeable, Unchangeable
 
-#✅ 17. Create a Tuple of pet 10 ages 
+#✅ 18. Create a Tuple of pet 10 ages 
 # pet_ages = (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
 # print(pet_ages) 
 # -> (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
 
-#✅ 18. Print the first pet age
+#✅ 19. Print the first pet age
 # print(pet_ages[0])
 # -> 3
 
 #---------------------------------- Testing Changeability 
-#✅ 19. Attempt to remove an element with .pop (should error)
+#✅ 20. Attempt to remove an element with .pop (should error)
 # pet_ages.pop()  
 # -> AttributeError: 'tuple' object has no attribute 'pop' 
 
-#✅ 20. Attempt to change the first element (should error)
+#✅ 21. Attempt to change the first element (should error)
 # pet_ages[0] = 'rose' 
 # print(pet_ages)
 # -> TypeError: 'tuple' object does not support item assignment
@@ -125,7 +120,7 @@ pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess G
 
 #---------------------------------- Demo Sets (stretch goal)
 #✅ 24. Create a set of 3 pet foods
-# pet_fav_food = {'house plants', 'fish', 'bacon'}
+pet_fav_food = {'house plants', 'fish', 'bacon'}
 # print(pet_fav_food)
 # -> {'bacon', 'fish', 'house plants'}
 
