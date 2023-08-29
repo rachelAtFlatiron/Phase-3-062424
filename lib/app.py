@@ -1,4 +1,5 @@
-# 📀📀📀📀 STOPPED at 30mins
+# 📀📀📀📀 STOPPED at 45mins
+# 🛑 use the simplicity of this lesson as an opportunity to look up documentation
 
 # Sequence Types
 
@@ -79,43 +80,34 @@ pet_names.clear()
 print(pet_names)  # -> []
 
 #---------------------------------- Tuple 
-# 📚 Review With Students:
-    # Mutable, Immutable, Changeable, Unchangeable
+# 🛑 Immutable - useful for when pulling in data and perserving said data (to keep it from being changed/altered)
 
 #✅ 18. Create a Tuple of pet 10 ages 
-# pet_ages = (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
-# print(pet_ages) 
-# -> (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
+pet_ages = (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
+print(pet_ages) # -> (3, 5, 6, 2, 7, 10, 2, 11, 7, 2)
 
 #✅ 19. Print the first pet age
-# print(pet_ages[0])
-# -> 3
+print(pet_ages[0]) # -> 3
 
 #---------------------------------- Testing Changeability 
 #✅ 20. Attempt to remove an element with .pop (should error)
-# pet_ages.pop()  
-# -> AttributeError: 'tuple' object has no attribute 'pop' 
+pet_ages.pop() # -> AttributeError: 'tuple' object has no attribute 'pop' 
 
 #✅ 21. Attempt to change the first element (should error)
-# pet_ages[0] = 'rose' 
-# print(pet_ages)
-# -> TypeError: 'tuple' object does not support item assignment
+pet_ages[0] = 'rose' # -> TypeError: 'tuple' object does not support item assignment
+print(pet_ages)
 
 #---------------------------------- Tuple Methods
 #✅ 21. Return the frequency of a given element
-# print(pet_ages.count(2))
-# -> 3
-#✅ 22. Return the index of a given element 
-# print(pet_ages.index(10))
-# -> 5
+print(pet_ages.count(2)) # -> 3
+#✅ 22. Return the index of first matching element 
+print(pet_ages.index(10)) # -> 5
 
 #✅ 23. Create a range 
-#Note Ranges are primarily used in loops
-# range_1 = range(10)
-# print(new_range)
-# -> range_1(0, 10)
-# range_2 = range(90, 100, 2)
-# -> range(90, 100, 2)
+#🛑 Ranges are primarily used in loops
+range_1 = range(10)
+print(range_1) # -> range_1(0, 10) 
+range_2 = range(90, 100, 2) # -> range(90, 100, 2)
 
 
 #---------------------------------- Demo Sets (stretch goal)
@@ -128,51 +120,52 @@ pet_fav_food = {'house plants', 'fish', 'bacon'}
 # Demo Dictionaries 
 #---------------------------------- Creating 
 #✅ 25.  Create a dictionary of pet information with the keys name, age and breed
+#🛑 like JSON where the keys are strings
+#🛑 faster than using dict() since it doesn't require method call
 pet_info_rose = {'name':'rose','age':11,'breed':'domestic long '}
 # print(pet_info_rose)
 # -> {'name': 'Rose', 'age': 11, 'breed': 'domestic long '}
 
 #✅ 26.  Use dict to create a dictionary of pet information with the keys name, age and breed
+#🛑 useful for ensuring keys are valid identifiers {'1+1=':2}
 pet_info_spot = dict(name='Spot', age=25, breed='boxer')
-# print(pet_info_spot)
-# -> {'name': 'Spot', 'age': 25, 'breed': 'boxer'}
+print(pet_info_spot) # -> {'name': 'Spot', 'age': 25, 'breed': 'boxer'}
 
 #---------------------------------- Reading
-#✅ 27. Print the pet attribute of name using bracket notation 
-# print(pet_info_rose['name'])
-# -> Rose
+#✅ 27. Print the pet attribute of name using bracket notation
+#🛑 gives error if key/value does not exist 
+print(pet_info_rose['name']) # -> Rose 
 
 #✅ 28. Print the pet attribute of age using .get
-# print(pet_info_rose.get('age'))
-# -> 11
-#Note: get is preferred over bracket notation in most cases because it will return none instead of an error
+#🛑 returns None if key/value does not exist
+print(pet_info_rose.get('age')) # -> 11
+#🛑 optional second param to specify error statement
+print(pet_info_rose.get('temperament', 'Attribute Not Found!'))
+#🛑 Note: get is preferred over bracket notation in most cases because it will return none instead of an error if the item does not exist
 
 #---------------------------------- Updating 
 #✅ 29. Update the pets age to 12
-# pet_info_rose['age'] = 12
-# print(pet_info_rose)
-# -> {'name': 'rose', 'age': 12, 'breed': 'domestic long '}
+pet_info_rose['age'] = 12
+print(pet_info_rose) # -> {'name': 'rose', 'age': 12, 'breed': 'domestic long '}
 
 #✅ 30. Update the other pets age to 26
-# pet_info_spot.update({'age':26})
-# print(pet_info_spot)
-# -> {'name': 'Spot', 'age': 26, 'breed': 'boxer'}
+#🛑 useful for updating multiple key/value pairs
+pet_info_spot.update({'age':26})
+print(pet_info_spot) # -> {'name': 'Spot', 'age': 26, 'breed': 'boxer'}
 
 #---------------------------------- Deleting
 #✅ 30. Delete a pets age using the del keyword 
-# del pet_info_spot['age']
-# print(pet_info_spot)
-# -> {'name': 'Spot', 'breed': 'boxer'}
+#🛑 del can be used on other things besides key/value pairs (i.e. variables), removes it from the global/local scope
+del pet_info_spot['age']
+print(pet_info_spot) # -> {'name': 'Spot', 'breed': 'boxer'}
 
-#✅ 31. Delete the other pets age using the .pop 
-# pet_info_rose.pop('age')
-# print(pet_info_rose)
-# -> {'name': 'rose', 'breed': 'domestic long '}
+#✅ 31. Delete the other pets age using the .pop, returns removed value
+pet_info_rose.pop('age')
+print(pet_info_rose) # -> {'name': 'rose', 'breed': 'domestic long '}
 
 #✅ 32. Delete the last item in the pet dictionary using popitem()
-# pet_info_rose.popitem()
-# print(pet_info_rose)
-# ->{'name': 'rose', 'age': 11}
+pet_info_rose.popitem()
+print(pet_info_rose) # ->{'name': 'rose', 'age': 11}
 
 
 #---------------------------------- Demo Loops 
@@ -194,25 +187,25 @@ pet_info = [
     }
     ]
 #✅ 33. loop through a range of 10 and print every number within the range
-# for num in range(10):
-#     print(num)
+for num in range(10):
+    print(num)
 
 #✅ 34. loop through a range between 50 and 60 that iterates by 2 and print every number
-# for num in range(50, 60, 2):
-#     print(num)
+for num in range(50, 60, 2):
+    print(num)
 
 #✅ 35. Loop through the pet_info list and print every dictionary  
-# for pet in pet_info:
-#     print(pet)
+for pet in pet_info:
+    print(pet)
 
 #✅ 36. Create a function that takes a list as an argument. 
     # The function should use a for loop to loop through the list and print every item in the list 
     # Invoke the function and pass it pet_names as an argument
-# def print_info(lst):
-#     for item in lst:
-#         print(item)
+def print_info(lst):
+    for item in lst:
+        print(item)
 
-# print_info(pet_names)
+print_info(pet_names)
 
 #✅ 37. Create a function that takes a list as an argument.(simple example) 
     # The function should define a counter and set it to 0
@@ -220,12 +213,12 @@ pet_info = [
         # The loop will continue as long as the counter is less than the length of the list
         # Every loop should increase the count by 1
     # return the counter 
-# def count(info):
-#     counter = 0
-#     while(counter < len(info)-1):
-#         counter += 1
-#     return counter
-# count(pet_info)
+def count(info):
+    counter = 0
+    while(counter < len(info)-1):
+        counter += 1
+    return counter
+count(pet_info)
 
 #✅ 38. Create a function that updates the age of a given pet
         # The function should take a list of dicts, name and age as parameters 
@@ -236,36 +229,36 @@ pet_info = [
         # If the dict containing a matching name is found update the items age with the new age 
         # else return 'pet not found'
 
-# def update_age(info, name, age):
-#     index = 0
-#     while(info[index].get('name') != name and index < len(info)-1):
-#         index += 1
+def update_age(info, name, age):
+    index = 0
+    while(info[index].get('name') != name and index < len(info)-1):
+        index += 1
 
-#     if info[index].get('name') == name:
-#         info[index]['age'] = age
-#         return info[index]
-#     else:
-#         return 'pet not found' 
+    if info[index].get('name') == name:
+        info[index]['age'] = age
+        return info[index]
+    else:
+        return 'pet not found' 
 
-# print(update_age(pet_info,'spot',2))
+print(update_age(pet_info,'spot',2))
 
 
 # map like 
 #✅ 39. Use list comprehension to return a list containing every pet name from pet_info changed to uppercase
-# pet_names_upper = [pet.get('name').upper() for pet in pet_info] 
-# print(pet_names_upper)
+pet_names_upper = [pet.get('name').upper() for pet in pet_info] 
+print(pet_names_upper)
 
 # find like
 #✅ 40. Use list comprehension to find a pet named spot
-# find_pet = [ pet for pet in pet_info if pet.get('name') == 'spot']
-# print(find_pet)
+find_pet = [ pet for pet in pet_info if pet.get('name') == 'spot']
+print(find_pet)
 
 # filter like
 #✅ 41. Use list comprehension to find all of the pets under 3 years old
-# young_pets = [pet for pet in pet_info if pet.get('age') < 3]
-# print(young_pets)
+young_pets = [pet for pet in pet_info if pet.get('age') < 3]
+print(young_pets)
 
 #✅ 43. Create a generator expression matching the filter above. Compare and contrast the generator to the list comprehension. 
-# young_pets_generator = (pet for pet in pet_info if pet.get('age') < 3)
-# print(young_pets_generator)
+young_pets_generator = (pet for pet in pet_info if pet.get('age') < 3)
+print(young_pets_generator)
 # #<generator object <genexpr> at 0x10777b900>
