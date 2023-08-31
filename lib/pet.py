@@ -1,18 +1,30 @@
 #!/usr/bin/env python3
 # Class Attributes and Methods 
-
+import ipdb
+#✅ 5. Import the pet and cat class to use in debug.py
 class Pet:
+    #✅ 6. Keep track of the total number of Pets created
+    #✅ 6a. Create a class attribute
 
-    def __init__(self,name, age, breed, temperament, image_url):
+    total_pets = 0
+
+    def __init__(self, name, age, breed, temperament, image_url):
         self.name = name
         self.age = age
         self.breed = breed
         self.temperament = temperament
         self.image_url = image_url
- 
-    
-    # 6✅. Create a class method increase_pets that will increment total_pets
-        # replace Pet.total_pets += 1 in __init__ with increase_pets()
+        #✅ 6b. Update class attribute whenever an instance is initialized
+        #Pet.total_pets += 1
+
+        #✅ 6c. Create a class method increase_pets that will increment total_pets
+        Pet.increase_pets()
+
+    #🛑 decorator for class methods
+    @classmethod 
+    #🛑 cls refers to Pet class, analogous to 'self' but for the whole class
+    def increase_pets(cls):
+        cls.total_pets += 1
 
     def print_pet_details(self):
         print(f'''
@@ -22,7 +34,5 @@ class Pet:
             temperament:{self.temperament}
             image_url:{self.image_url}
         ''')
-
-
 
 
