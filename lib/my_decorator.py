@@ -2,6 +2,7 @@
 #⭐️ more -> http://bit.ly/3YQh8KR
 #🛑 can assign first class functions to variables, store in data structures, pass to other functions, return them as value from other functions
 #🛑 can treat functions just like anything else (ints, strings, etc)
+#🛑 higher order functions operate on other functions (return or take in other fxns)
 
 #✅ 1a. Create functions to be used as callbacks 
 #🛑 these will be invoked at a later point
