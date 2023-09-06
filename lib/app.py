@@ -115,6 +115,8 @@ range_2 = range(90, 100, 2) # -> range(90, 100, 2)
 pet_fav_food = {'house plants', 'fish', 'bacon'}
 # print(pet_fav_food)
 # -> {'bacon', 'fish', 'house plants'}
+# 🛑 duplicate items not allowed
+letters = set('banana') # => { 'b', 'a', 'n'}
 
 
 # Demo Dictionaries 
