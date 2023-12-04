@@ -20,3 +20,5 @@
 | 6. | Object-Relational Mapping | | | |
 | 7. | SQLAlchemy & Alembic | | | |
 | 8. | SQLAlchemy Associations | | | |
+
+![Phase 3 Trajectory](./trajectory.png)
