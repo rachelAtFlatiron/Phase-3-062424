@@ -1,4 +1,4 @@
-# SENG-LIVE-073123 Phase 3: Python
+# Phase 3: Python
 
 ## Phase Level Objectives
 
