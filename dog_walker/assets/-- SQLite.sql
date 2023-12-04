@@ -157,7 +157,7 @@ CREATE TABLE appointments(
 
 -- ✅ 9. Seed data
 
--- ✅ 9a. Create two staff members using ChatGPT?
+-- ✅ 9a. Create two staff members using ChatGPT
 INSERT INTO staff (name, email, phone) VALUES
     ('Alice Wonderland', 'alice.wonderland@gmail.com', 1234567890),
     ('Bob Marley', 'bob.marley@gmail.com', 9876543210);
@@ -212,7 +212,7 @@ JOIN staff
     ON appointments.staff_id = staff.id 
 AND staff.name = 'Alice Wonderland';
 
--- ✅ 10c. Inner join?
+-- ✅ 10c. Inner join
 -- 🛑 functionally equivalent to join / inner intersection of venn diagram
 SELECT pets.name, appointments.request
 FROM appointments
