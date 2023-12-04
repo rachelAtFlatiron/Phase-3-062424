@@ -1,12 +1,6 @@
 # Stretch Goal: Include Association with Owner
 # 🛑 mapping SQL logic to separate methods that are easier to call using Python
 
-
-
-#  STOPPED AT 30 MINS
-
-
-
 import sqlite3 # 🛑 imports library
 
 # 🛑 see debug.py for importing and using CONN, CURSOR
