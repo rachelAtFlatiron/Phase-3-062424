@@ -33,11 +33,6 @@ class Owner:
             bill += app.procedure.price 
         return bill
 
-
-    
-
-
-
     def appointments(self):
         apps = []
         for i in self.pets():
