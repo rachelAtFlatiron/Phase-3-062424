@@ -1,6 +1,6 @@
 # Python Fundamentals
 
-## Learning Goals
+## SWBATs
 
 - [ ] Review an introduction to Python and phase trajectory 
 - [ ] Demonstrate Python package management with `pip`
@@ -11,6 +11,22 @@
 - [ ] Review Python variable scope and the `global` keyword
 - [ ] Review Python error messages and exceptions 
 - [ ] Demonstrate handling errors with `try:` and `except:`
+
+---
+
+## Deliverables 
+
+#### 1. Create a condition to check a pet's mood
+
+#### 2. Create a ternary operator using "pet_mood" as a condition
+
+#### 3. Create a function (say_hello) that returns the string "Hello, world!"
+
+#### 4. Create a function (pet_greeting) that will return a string with interpolated pet's name
+
+#### 5. Move conditional logic from Deliverable 1 into a function (pet_status) so that we may use it with different pets / moods
+
+#### 6. Create a function (pet_birthday) that will increment a pet's age up by 1. Use try / except to handle errors. 
 
 ---
 
