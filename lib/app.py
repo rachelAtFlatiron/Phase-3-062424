@@ -1,4 +1,3 @@
-# 📀📀📀📀 STOPPED at 45mins
 # 🛑 use the simplicity of this lesson as an opportunity to look up documentation
 
 # Sequence Types
