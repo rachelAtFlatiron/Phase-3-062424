@@ -40,6 +40,7 @@ class Pet:
                 );
         """
         CURSOR.execute(sql)
+        CONN.commit()
         
     # ✅ 3. Drop table
     @classmethod
@@ -48,6 +49,7 @@ class Pet:
             DROP TABLE IF EXISTS pets;
         """
         CURSOR.execute(sql)
+        CONN.commit()
         
 
     # ✅ 4. Insert instance into DB
@@ -64,6 +66,7 @@ class Pet:
             # 🛑 pass in a tuple for arguments
             # 🛑 ??? NOT VISIBLE VIA SQLITE YET, need get_all() - then we will see all the instances popping up for us
             CURSOR.execute(sql, (self.name, self.age, self.species, self.owner_id))
+            CONN.commit()
         except Exception as x: 
             
             print(f'something went wrong, {x}')
@@ -144,6 +147,7 @@ class Pet:
         if not row: 
             sql = """ INSERT INTO pets(name, age, species, owner_id) VALUES (?, ?, ?, ?);"""
             CURSOR.execute(sql, (name, age, species, owner_id))
+            CONN.commit()
             #🛑 last_row_id is built-in, does not handle if INSERT fails
             return cls.find_by_id(CURSOR.lastrowid)
         # ✅ 10c. Return pet if it does exist
@@ -159,6 +163,7 @@ class Pet:
             UPDATE pets SET name = ?, age = ?, species = ?, owner_id = ? WHERE id = ?;
         """
         CURSOR.execute(sql, (self.name, self.age, self.species, self.owner_id, self.id))
+        CONN.commit()
 
 
     def __repr__(self):

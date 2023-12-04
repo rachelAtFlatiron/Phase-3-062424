@@ -28,12 +28,14 @@ class Owner:
         );"""
 
         CURSOR.execute(sql)
+        CONN.commit()
 
     # ✅ 13. Drop table
     @classmethod
     def drop_table(cls):
         sql = """DROP TABLE IF EXISTS owners;"""
         CURSOR.execute(sql)
+        CONN.commit()
 
     # ✅ 14. Insert row
     def save(self):
@@ -43,6 +45,7 @@ class Owner:
                 VALUES (?, ?);
             """
             CURSOR.execute(sql, (self.name, self.email))
+            CONN.commit()
             # ✅ 14a. Update instance with new row's id
             find_sql = """ SELECT id FROM owners WHERE id = ?;"""
             self.id = CURSOR.execute(find_sql, (CURSOR.lastrowid,)).fetchone()[0]
@@ -87,6 +90,7 @@ class Owner:
                 DELETE FROM owners WHERE id = ?;
             """
             CONN.execute(sql, (id, ))
+            CONN.commit()
             print("success")
         except Exception as e:
             print(f'error: {e}')
@@ -99,6 +103,7 @@ class Owner:
                 UPDATE owners SET name = ?, email = ? WHERE id = ?;
             """
             CURSOR.execute(sql, (self.name, self.email, self.id))
+            CONN.commit()
             print('success')
         except Exception as e:
             print(f'Error: {e}')
