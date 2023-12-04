@@ -24,15 +24,15 @@ class Cat(Pet):
         #✅ 7d. Update the instance in debug.py to rose = Cat('rose', 11, 'domestic longhair', 'sweet', 'rose.jpg', True)
 
 
-    #✅ 9. Create a method unique to the Cat subclass called talk which returns the string "Meowwwwwww"
+    #✅ 8. Create a method unique to the Cat subclass called talk which returns the string "Meowwwwwww"
     def say_meow(self):
         print("Meow!")
         #🛑 show how say_meow only works for Cats and not for Pets
 
-    #✅ 10. Create a method called print_pet_details, to match the print_pet_details in Pet    
+    #✅ 9. Create a method called print_pet_details, to match the print_pet_details in Pet    
     def print_pet_details(self):
         super().print_pet_details()
-        #✅ 10a. Print the indoor attribute
+        #✅ 9a. Print the indoor attribute
         print(f'''
             indoor: {self.indoor}
         ''')
