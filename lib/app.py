@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 #🛑 Review With Students:
-    # Python environment set up: pipenv install, pipenv shell
+    #1️⃣ Python environment set up: pipenv install, pipenv shell
     # Make sure the versions are aligned (with Pipfile)
     #🛑 Python => ipdb.set_trace(), JS => debugger
     # Pipfile.lock => package.lock.json
-	# Python debugging tools (inside terminal as opposed to browser)
-	# Python datatypes 
+	#2️⃣ Python debugging tools (inside terminal as opposed to browser)
+	#3️⃣ Python datatypes: type() 
 
 #🛑 To enable ipdb debugging, first import "ipdb" (included in pipfile)
 #🛑 can override previously set values / test different outcomes
@@ -50,7 +50,7 @@ def say_hello():
 #🛑 JS => can invoke fxns with params without args, Python => cannot invoke fxns with params w/o args (unless there's a default)
 def say_hello_param(param):
     return "Hello, world!"
-say_hello_param() #throws error on python app.py
+# say_hello_param() #throws error on python app.py
 
 #🛑 note default param
 def say_hello_param_def(param = "Default"):
