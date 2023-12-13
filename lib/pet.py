@@ -19,6 +19,29 @@ class Pet:
 
         #✅ 6c. Create a class method increase_pets that will increment total_pets
         Pet.increase_pets()
+    
+    #🛑 using property for name 
+    # def get_name(self):
+    #     return self._name 
+    # def set_name(self, name):
+    #     if(isinstance(name, str)):
+    #         self._name = name 
+    #     else: 
+    #         raise ValueError("name must be a string")
+    # name = property(get_name, set_name) 
+
+    #🛑using decorator for name 
+    @property
+    def name(self):
+        return self._name 
+    @name.setter 
+    def name(self, name):
+        if(isinstance(name, str)):
+            self._name = name 
+        else: 
+            raise ValueError("name must be a string")
+
+
 
     #🛑 decorator for class methods
     @classmethod 

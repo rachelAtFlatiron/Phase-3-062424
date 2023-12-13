@@ -23,6 +23,9 @@ class Cat(Pet):
 
         #✅ 7d. Update the instance in debug.py to rose = Cat('rose', 11, 'domestic longhair', 'sweet', 'rose.jpg', True)
 
+        
+
+
 
     #✅ 8. Create a method unique to the Cat subclass called talk which returns the string "Meowwwwwww"
     def say_meow(self):
