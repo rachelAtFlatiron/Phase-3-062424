@@ -41,32 +41,44 @@ class Pet:
 class Owner:
     def __init__(self, name, age):
         print("instantiating...")
-        self._name = name  #_ says please don't directly update this attribute (even though technically you can)
+        self.name = name  #_ says please don't directly update this attribute (even though technically you can)
         self.age = age 
     #✅ 5d.  Add parameter to pass in name property value on instantiation
 
-
-    #✅ 5a. Create get/set instance methods for name property 
-    def get_name(self):
-        print("getting...")
+    @property 
+    def name(self):
+        print("getting name with decorator...")
         return self._name 
-    def set_name(self, name):
-        print("setting...")
-        #✅ 5b. Create constraint to make sure the name is of type string
+    
+    @name.setter 
+    def name(self, name):
+        print("setting name with decorator...")
         if isinstance(name, str):
             self._name = name 
-        else:
+        else: 
             print("Name must be a string")
-
-    def print_owner(self):
-        print(f'''
-                <Owner 
-                    name: {self.name}
-                    age: {self.age}
-                />
-              ''')
     
-    #✅ 5c. Compile get_name, set_name under the same property name
-    name = property(get_name, set_name)
+    # #✅ 5a. Create get/set instance methods for name property 
+    # def get_name(self):
+    #     print("getting...")
+    #     return self._name 
+    # def set_name(self, name):
+    #     print("setting...")
+    #     #✅ 5b. Create constraint to make sure the name is of type string
+    #     if isinstance(name, str):
+    #         self._name = name 
+    #     else:
+    #         print("Name must be a string")
+
+    # def print_owner(self):
+    #     print(f'''
+    #             <Owner 
+    #                 name: {self.name}
+    #                 age: {self.age}
+    #             />
+    #           ''')
+    
+    # #✅ 5c. Compile get_name, set_name under the same property name
+    # name = property(get_name, set_name)
 
 ipdb.set_trace()
