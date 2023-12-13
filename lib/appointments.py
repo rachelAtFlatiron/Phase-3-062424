@@ -12,5 +12,5 @@ class Appointment:
     #✅ 8. Create a class method for all unique clients of the clinic
 
     def __repr__(self):
-        return f'''<Appointment for {self.pet.name}: {self.procedure.name}>'''
+        return f'''<Appointment request={self.request} >'''
     

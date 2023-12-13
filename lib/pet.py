@@ -6,11 +6,10 @@ class Pet:
     #✅ 1. create relationship: pet belongs to an owner
     #✅ 2. use chatGPT to create owners and pets in debug.py
     #✅ 2a. create __repr__ function to more easily read output
-    def __init__(self, name, age, breed, owner):
+    def __init__(self, name, age, breed):
         self.name = name
         self.age = age
         self.breed = breed
-        self.owner = owner 
 
     #✅ 5. create relationship: pet has many appointments
 
@@ -24,4 +23,4 @@ class Pet:
         ''')
 
     def __repr__(self):
-        return f'''<Pet {self.name}'s owner is {self.owner.name}>'''
+        return f'''<Pet {self.name} >'''
