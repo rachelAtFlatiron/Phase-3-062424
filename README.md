@@ -58,4 +58,3 @@
 
 #### 9. Create a method called print_pet_details, to match the print_pet_details in Pet 
 ##### 9a. Print the indoor attribute
-
