@@ -2,6 +2,7 @@
 -- ✅ 1. Select specific columns
 
 -- ✅ 2. Create new database structure
+
 -- ✅ 2a. Remove owners table
 
 -- ✅ 2b. Create owners table
