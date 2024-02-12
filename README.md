@@ -12,13 +12,13 @@
 
 | No. | Lecture | Videos | Starter | Solution |
 | --- | ------- | ------ | ------- | -------- |
-| 1. | Python Fundamentals | | | |
-| 2. | Python Data Structures | | | |
-| 3. | Object Oriented Programming in Python | | | |
-| 4. | OOP 2: Class Methods & Class Variables | | | |
-| 5. | Object Relationships | | | | 
-| 6. | SQL Fundamentals & Table Relations | | | |
-| 7. | Object-Relational Mapping | | | |
+| 1. | Python Fundamentals | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/01_starter) | Solution |
+| 2. | Python Data Structures | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/02_starter) | Solution |
+| 3. | Object Oriented Programming in Python | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/03_starter) | Solution |
+| 4. | OOP 2: Class Methods & Class Variables | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/04_starter) | Solution |
+| 5. | Object Relationships | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/05_starter) | Solution | 
+| 6. | SQL Fundamentals & Table Relations | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/06_starter) | Solution |
+| 7. | Object-Relational Mapping | Video | [Starter](https://github.com/rachelAtFlatiron/Phase-3-021924/tree/07_starter) | Solution |
 
 ***
 ## 1: Python Fundamentals
