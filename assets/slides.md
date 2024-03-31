@@ -74,3 +74,12 @@ title: '01_intro_to_python'
 - `ipdb` - has to be imported, creates a breakpoint when you run `file.py`
 
 - `print` - similar to `console.log` but will print to the console
+
+---
+
+## Big 'O' Notation
+
+- The runtime of common algorithms
+- 'O' is for 'order'.  It is NOT the number 0
+
+<img src="./big_o.png" />
