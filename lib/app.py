@@ -2,10 +2,13 @@
 #🛑 Review With Students:
     #1️⃣ Python environment set up: pipenv install, pipenv shell
     # Make sure the versions are aligned (with Pipfile)
+    #environment files here: /Users/rachelkatz/.pyenv/versions/3.8.13/bin/
     #🛑 Python => ipdb.set_trace(), JS => debugger
     # Pipfile.lock => package.lock.json
 	#2️⃣ Python debugging tools (inside terminal as opposed to browser)
 	#3️⃣ Python datatypes: type() 
+    # Making dog walker application
+
 
 #🛑 To enable ipdb debugging, first import "ipdb" (included in pipfile)
 #🛑 can override previously set values / test different outcomes
@@ -91,13 +94,20 @@ def pet_birthday(age):
     try:
         new_age = age + 1
         return f"Happy Birthday! Your pet is now {new_age}"
+    #except for default
     except TypeError: 
         print("Type Error Occurred")
     except NameError: #example of multiple excepts
         print("Name Error Occurred")
+    #if not type(x) is int:
+    #🛑 raise TypeError("only integers")
 pet_birthday("10") #type error
+
 
 #🛑 To create an ipdb breakpoint, comment / uncomment line below:
 ipdb.set_trace()
 
 
+# Good beginner labs
+# https://learning.flatironschool.com/courses/7598/modules/items/661656
+# https://learning.flatironschool.com/courses/7598/modules/items/661657
