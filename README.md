@@ -80,4 +80,3 @@
 #### 9. Use list comprehension to return a list containing every pet name from pet_info changed to uppercase
 ##### 9a. Use list comprehension to find a pet named spot
 ##### 9b. Use list comprehension to find all of the pets under 3 years old
-##### 9c. Create a generator expression matching the filter above. Compare and contrast the generator to the list comprehension. 
