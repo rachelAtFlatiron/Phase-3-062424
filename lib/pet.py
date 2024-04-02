@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+#attribute - stuff in the __init__
+#properties - attributes that have extra logic and use the @property decorator
+# you have complete control over its getter and setter methods
+# methods - functions you define within a class that operate within the values available in that instance
+
 import ipdb; 
 #✅ 1. Create a Pet class
 #🛑 class is the blueprint (cookie cutter), the instances are the cookies
@@ -57,7 +62,7 @@ class Owner:
     def __init__(self, age, name):
         self.age = age 
         #🛑 because self.name compiled the set/get methods, it will use the set_name()
-        self.name = name
+        self._name = name #imply that _name should be a private attribute
 
 
     #✅ 5a. Create get/set instance methods for name property 
@@ -73,9 +78,24 @@ class Owner:
             return self._name 
         else:
             print("Name must be a string")
-
+    name = property(get_name, set_name)
     #✅ 5c. Compile get_name, set_name under the same property name
     #🛑 using the @ decorator for properties is just syntactic sugar
-    name = property(get_name, set_name)
+            
+    # @property 
+    # def name(self):
+    #     print("getting name with decorator...")
+    #     return self._name 
+    # @name.getter #mostly in case you need to do other logic
+    # @name.setter 
+    # def name(self, name):
+    #     print("setting name with decorator...")
+    #     if isinstance(name, str):
+    #         self._name = name 
+    #     else: 
+    #         print("Name must be a string")
+    
+
+    
 
 ipdb.set_trace()
