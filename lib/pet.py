@@ -12,7 +12,12 @@ class Pet:
 
     #✅ 3. Demonstrate __init__ 
     #🛑 self => current instance that is being created
-    #✅ 3a. Add parameters for attributes (NO OWNER YET, SEE 3D)  
+    #🛑 dunder (double underscore) method - builtin "magic method"
+    #see all dunder methods for class with dir(int)
+    #✅ 3a. Add parameters for attributes (NO OWNER YET, SEE 3D) 
+
+    # attributes - data members of objects
+    # properties - like attributes but also perform some computation
     def __init__(self, name, age, breed, temperament, image_url, owner="No Owner"):
         #✅ 3b. use dot notation to access their attributes 
         self.name = name
