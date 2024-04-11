@@ -1,3 +1,4 @@
+# ✅ 9. Import all helper functions and necessary models
 from helpers import (
     exit_program,
     print_owner,
@@ -17,9 +18,13 @@ from models.pet import Pet
 #see appointments for one pet
 #update user 
 #make an appointment for a pet 
+
+# ✅ 14. Create a global `owner` and `pet` value
 cur_owner = None
 cur_pet = None 
 
+# ✅ 10. Create a function `main()` that will wait for a user's input 
+# ✅ 15. Add the decision tree to `main`
 def main():
     while True:
         choice = input(">Press enter to continue")
@@ -56,7 +61,8 @@ def set_cur_pet():
     global cur_pet 
     print('Enter the id of the pet')
     cur_pet = input("> ")
-    
+
+# ✅ 13. Create a `menu` function that displays actions a user can take
 def menu():
     print("Please select an option:")
     print("0. Exit the program")
@@ -68,7 +74,10 @@ def menu():
         if(cur_pet):
             print("5. See current pet")
             print("6. See current pet's appointments")
-        
+
+# ✅ 11. Create a function `greeting()` and `get_name()` that welcomes the user to the program and asks for their name 
+
+# ✅ 12. Use `greeting` and `main` to start the program
 def greeting():
     print("*******************")
     print("WECLOME TO THE VET")

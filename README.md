@@ -36,3 +36,8 @@
 
 #### 12. Use `greeting` and `main` to start the program
 
+#### 13. Create a `menu` function that displays actions a user can take
+
+#### 14. Create a global `owner` and `pet` value
+
+#### 15. Add the decision tree to `main`
