@@ -1,48 +1,38 @@
-# Object-Relational Mapping
+# CLIs
 
 ## SWBATs
 
-- [ ] Demonstrate configuring an application to connect with sqlite3
-- [ ] Demonstrate a create table method 
-- [ ] Review preventative measures for SQL injection
-- [ ] Demonstrate a save and create methods  
-    - [ ] Save => Persist created instance to DB
-    - [ ] Create => Instantiate / persist created instance to DB, return new instance 
-- [ ] Demonstrate query methods to find and retrieve resources 
-- [ ] Stretch Goal
-    - [ ] Make a “create_and_find_by” member
-    - [ ] Make “update” and “delete” member
+- [ ] Implement a CLI for an ORM application
 
 ---
 
 ## Deliverables
 
-`Pet.py:` 
-#### 1. In `Pet.py` add "__init__" with "name", "species", "breed", "temperament", and "id" (Default: None) Attributes 
-#### 2. Create table
-#### 3. Drop table
-#### 4. Insert instance into DB
-#### 5. Initialize instance and insert into database
-#### 6. Create instance from DB, thus getting the ID
-#### 7. Get all rows
-#### 8. Get row by name
-#### 9. Get row by id
-#### 10. Find row, otherwise create row
-##### 10a. Search for pet
-##### 10b. Insert pet if it does not exist
-##### 10c. Return pet if it does exist
-#### 11. Update row
-<br />
+#### 1. Review the models in `/models`
 
-`Owner.py:`
-#### 12. Create table
-#### 13. Drop table
-#### 14. Insert row
-##### 14a. Update instance with new row's id
-#### 15. Get all rows
-##### 15a. Create helper method to turn a row into an owner instance
-#### 16. Get row by id
-#### 17. Delete row by id
-#### 18. Update row by id
+### Create the following functions in `helpers.py`
 
+#### 2. A function `print_owner(id)` that finds the owner with id `id` and prints it out.
+
+#### 3. A function `print_pet(id)` that finds the pet with id `id` and prints it out.
+
+#### 4. A function `print_all_owners()` that prints all owners 
+
+#### 5. A function `print_all_pets_for_owner(id)` that prints all pets for the owner with the id `id`
+
+#### 6. A function `print_all_apps_for_owner(id)` that prints all appointments for all the pets for owner with id `id`
+
+#### 7. A function `print_apps_for_one_pet(id)` that prints all the appointments for the pet with id `id`
+
+#### 8. A function `exit_program()` that prints will exit our cli
+
+### Create the following functions in `cli.py`
+
+#### 9. Import all helper functions and necessary models
+
+#### 10. Create a function `main()` that will wait for a user's input 
+
+#### 11. Create a function `greeting()` and `get_name()` that welcomes the user to the program and asks for their name 
+
+#### 12. Use `greeting` and `main` to start the program
 
