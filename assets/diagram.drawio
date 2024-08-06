@@ -1,0 +1,40 @@
+<mxfile host="65bd71144e">
+    <diagram id="OwD7j46-rCLoCxwPuom8" name="Page-1">
+        <mxGraphModel dx="1033" dy="342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0.375;entryY=0.019;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;entryX=0.333;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Pet&lt;br&gt;&lt;br&gt;attributes: age, name, breed&lt;br&gt;methods: hello( ), print_pet_details( )" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="140" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="age: 8&lt;br&gt;name: lady&lt;br&gt;breed: short hair cat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="310" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="age: 2&lt;br&gt;name: lassie&lt;br&gt;breed: collie" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="325" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="age: 0&lt;br&gt;name: scampi&lt;br&gt;breed: domestic cat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="320" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Class (Blueprint)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="120" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Instances (Objects)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="525" y="295" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Appointment&amp;nbsp;&lt;br&gt;&lt;br&gt;time, pet, service&lt;br&gt;change_time( ), type_of_service( ), type_of_pet( ), receipt( ), has_occured( ), postponed( )" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="190" y="460" width="230" height="150" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
