@@ -1,17 +1,32 @@
 <mxfile host="65bd71144e">
     <diagram id="kPP9_75J-6GuxhfSsJ5T" name="Page-1">
-        <mxGraphModel dx="365" dy="291" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="535" dy="325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="pets" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="2" value="pets" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="80" y="120" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="staff" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="3" value="staff" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="200" y="120" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="appointments" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="4" value="appointments" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="140" y="120" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Pets&lt;br&gt;id(PK)&lt;br&gt;name&lt;br&gt;breed&lt;br&gt;age&lt;br&gt;owner_id(FK)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="50" width="180" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Owners&lt;br&gt;id(PK)&lt;br&gt;name" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="60" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Appointments&lt;br&gt;id(PK)&lt;br&gt;procedure&lt;br&gt;owner_id(FK)&lt;br&gt;pet_id(FK)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="180" width="185" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
