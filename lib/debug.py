@@ -3,20 +3,22 @@
 from owner import Owner, CONN, CURSOR
 from pet import Pet, CONN, CURSOR
 
-# Owner.create_table()
-# frank = Owner("frank", "555-555-5555", "frank@gmail.com", "555 Somewhere St.")
-# frank.save()
+# owner1 = Owner("Paul")
+# owner2 = Owner("Atreides")
 
-# pet1 = Pet("Fluffy", 2, "Labrador")
-# pet2 = Pet("Whiskers", 1, "Siamese")
-# pet3 = Pet("Buddy", 3, "Golden Retriever")
-# pet4 = Pet("Mittens", 2, "Persian")
-# pet5 = Pet("Rocky", 4, "Bulldog")
-# pet6 = Pet("Luna", 1, "Husky")
-# pet7 = Pet("Oliver", 5, "Maine Coon")
-# pet8 = Pet("Charlie", 2, "Poodle")
-# pet9 = Pet("Daisy", 3, "Beagle")
-# pet10 = Pet("Max", 4, "German Shepherd")
+# owner1.save()
+# owner2.save()
+
+# pet1 = Pet("Fluffy", 2, "Labrador", 5)
+# pet2 = Pet("Whiskers", 1, "Siamese", 2)
+# pet3 = Pet("Buddy", 3, "Golden Retriever", 3)
+# pet4 = Pet("Mittens", 2, "Persian", 3)
+# pet5 = Pet("Rocky", 4, "Bulldog", 3)
+# pet6 = Pet("Luna", 1, "Husky", 2)
+# pet7 = Pet("Oliver", 5, "Maine Coon", 1)
+# pet8 = Pet("Charlie", 2, "Poodle", 3)
+# pet9 = Pet("Daisy", 3, "Beagle", 1)
+# pet10 = Pet("Max", 4, "German Shepherd", 2)
 
 # pet1.save()
 # pet2.save()
